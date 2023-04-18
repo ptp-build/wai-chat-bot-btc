@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"allowJs": true,
+		"outDir": "./dist/server",
+		"strict": true,
+		"sourceMap": true,
+		"typeRoots": ["node_modules/@types"],
+		"allowSyntheticDefaultImports": true,
+	},
+	"exclude": ["dist", "node_modules"]
+}
