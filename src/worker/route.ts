@@ -26,7 +26,7 @@ router.all('*', async (request: Request) => {
 	}
 });
 
-router.post('/message', BotBtcAction);
-router.get('/commands', BotBtcCommandsAction);
+router.post('/api/btc/message', BotBtcAction);
+router.get('/api/btc/commands', BotBtcCommandsAction);
 router.original.get('/', request => Response.redirect(`${request.url}docs`, 302));
 router.all('*', () => new Response('Not Found.', { status: 404 }));
