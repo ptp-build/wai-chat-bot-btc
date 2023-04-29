@@ -30,9 +30,9 @@ export class BotBtcCommandsAction extends WaiOpenAPIRoute {
 		},
 	};
 	async handle(request: Request, data: Record<string, any>) {
-		return {
+		return WaiOpenAPIRoute.responseJson({
 			commands: Commands,
-		};
+		});
 	}
 }
 
